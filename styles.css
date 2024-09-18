@@ -3,17 +3,22 @@ body {
 }
 
 .about {
-
+  color: red;
+  font-family: helvetica;
 }
 
 .skills {
+  color: green;
+  font-family: ariel;
 
 }
 
 .projects {
-
+  color: light-grey;
+  font-family: monaco;
 }
 
 .contact {
-
+  color: yellow;
+  font-family: papyrus;
 }
