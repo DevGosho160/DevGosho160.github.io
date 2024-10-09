@@ -34,8 +34,7 @@ img {
   margin: 10px;
   padding: 20px 10px;
   background: magenta;
-  border-radius: 25%;
-  overflow: hidden;
+  border-radius: 35%;
 }
 
 .contact {
