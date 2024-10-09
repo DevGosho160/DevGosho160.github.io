@@ -4,18 +4,18 @@ body {
 
 .about {
   color: red;
-  font-family: helvetica;
+  font-family: cursive;
 }
 
 .skills {
   color: green;
-  font-family: ariel;
+  font-family: cursive;
 
 }
 
 .projects {
   color: light-grey;
-  font-family: monaco;
+  font-family: cursive;
   display: flex;
   flex-wrap: wrap;
 }
@@ -30,5 +30,5 @@ body {
 
 .contact {
   color: yellow;
-  font-family: papyrus;
+  font-family: cursive;
 }
