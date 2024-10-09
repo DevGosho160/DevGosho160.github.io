@@ -2,6 +2,14 @@ body {
   background: #3600EB;
 }
 
+h3 {
+  text-align: center;
+}
+
+img {
+  object-fit: contain;
+}
+
 .about {
   color: red;
   font-family: cursive;
