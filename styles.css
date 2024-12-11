@@ -1,5 +1,6 @@
-body {
-  background: #3600EB;
+h1 {
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h3 {
@@ -12,19 +13,13 @@ img {
 }
 
 .about {
-  color: red;
-  font-family: cursive;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px;
   justify-content: center;
 }
 
 .about img{
   width: 150px;
   height: 200px;
-  border-radius: 25%;
+  border-radius: 10%;
   border: 2px solid rgb(126, 14, 201);
 }
 
@@ -35,28 +30,27 @@ img {
   line-height: 125%;
 }
 
-.skills {
-  color: green;
-  font-family: cursive;
-
-}
-
-.projects {
-  color: light-grey;
-  font-family: cursive;
-  display: flex;
-  flex-wrap: wrap;
+.projects .accordion-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .project {
-  width: 30%;
-  margin: 10px;
-  padding: 20px 10px;
-  background: magenta;
-  border-radius: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact {
-  color: yellow;
-  font-family: cursive;
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }

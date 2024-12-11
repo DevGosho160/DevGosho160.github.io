@@ -1,61 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> CSCE 190: Devon Goshorn</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   <h1>Devon Goshorn</h1>
-  <div class="about">
-    <h2>About me</h2>
-    <img src="images/profile_image.png">
-    <p>
-      Hello, my name is Devon Goshorn and I am a Senior at UofSC majoring in Computer Engineering. I currently work on research in maritime perception systems for the iMSEL at the University. My goal is to design computing systems and controls that do their job efficiently while remaining intuitive and easy to use.
-    </p>
+  <div class="accordion" id="accordionExample">
+    <div class="about accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">About me</button></h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body"> 
+          <img src="images/profile_image.png">
+          <p>
+            Hello, my name is Devon Goshorn and I am a Senior at UofSC majoring in Computer Engineering. I currently work on research in maritime perception systems for the iMSEL at the University. My goal is to design computing systems and controls that do their job efficiently while remaining intuitive and easy to use.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="skills accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Skills</button></h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><b>Programming Languages:</b>Python, Java, C++</p>
+          <p><b>Resume:</b><a href="files/resume.pdf">Download here</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="projects accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Highlighted projects</button></h2><br>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <section class="project">
+            <a href="https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock"><h3>Drop Test System</h3></a>
+            <a href="https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock"><img src="images/droptest.png"></a>
+            <p>
+              A drop test system developed to create a dataset of shock and vibration samples
+            </p>
+          </section>
+          <section class="project">
+            <a href="https://github.com/SCCapstone/logic-terrors"><h3>WorkplaceWise</h3></a>
+            <a href="https://github.com/SCCapstone/logic-terrors"><img src="images/workplacewise.png"></a>
+            <p>This is a business dashboard application developed as part of a senior project.</p>
+          </section>
+          <section class="project">
+            <a href="files/problem-statement-file.pdf"><h3>Problem Statement</h3></a>
+            <a href="files/problem-statement-file.pdf"><img src="images/problem-statement_sqr.png"></a>
+            <p>Commuting students at the University of South Carolina struggle to find open parking spots on campus after 10:00a.</p>
+          </section>
+          <section class="project">
+            <a href="files/Affinity_DOC.pdf"><h3>Affinity Diagram</h3></a>
+            <a href="files/Affinity_DOC.pdf"><img src="images/Affinity_IMG.png"></a>
+            <p>
+              This is the affinity diagram for our skate progression application. It details important requirements and ideas for the applications development
+            </p>
+          </section>
+          <section class="project">
+            <a href="files/sheets_DOC.pdf"><h3>Sketches</h3></a>
+            <a href="files/sheets_DOC.pdf"><img src="images/sheet_IMG.png"></a>
+            <p>
+              These are some brief sketches of our skate progression application highlighting how users can progress in a skill tree, view tricks that they have landed, and upload tricks they have landed.
+            </p>
+          </section>
+          <section class="project">
+            <a href="https://youtu.be/eWrHaYCTEf8"><h3> Prototype</h3></a>
+            <a href="https://youtu.be/eWrHaYCTEf8"><img src="images/Proto.png"></a>
+            <p> The prototype of our SkateTree app demonstrates how our app will help beginning and experienced skaters track their progression in skateboarding. </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="contact accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Contact me</button></h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>
+            Phone: (803)297-4811
+          </br>
+            Email: goshorna@email.sc.edu
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="skills"><h2>Skills</h2></div>
-  <div class = "skills">
-    <p><b>Programming Languages:</b>Python, Java, C++</p>
-    <p><b>Resume:</b><a href="files/resume.pdf">Download here</a></p>
-  </div>
-  <div class="projects"><h2>Highlighted projects</h2><br>
-    <section class="project">
-      <a href="https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock"><h3>Drop Test System</h3></a>
-      <a href="https://github.com/High-Rate-SHM-Working-Group/Dataset-7-forced-vibration-and-shock"><img src="images/droptest.png"></a>
-      <p>
-        A drop test system developed to create a dataset of shock and vibration samples
-      </p>
-    </section>
-    <section class="project">
-      <a href="https://github.com/SCCapstone/logic-terrors"><h3>WorkplaceWise</h3></a>
-      <a href="https://github.com/SCCapstone/logic-terrors"><img src="images/workplacewise.png"></a>
-      <p>This is a business dashboard application developed as part of a senior project.</p>
-    </section>
-    <section class="project">
-      <a href="files/problem-statement-file.pdf"><h3>Problem Statement</h3></a>
-      <a href="files/problem-statement-file.pdf"><img src="images/problem-statement_sqr.png"></a>
-      <p>Commuting students at the University of South Carolina struggle to find open parking spots on campus after 10:00a.</p>
-    </section>
-    <section class="project">
-      <a href="files/Affinity_DOC.pdf"><h3>Affinity Diagram</h3></a>
-      <a href="files/Affinity_DOC.pdf"><img src="images/Affinity_IMG.png"></a>
-      <p>
-        This is the affinity diagram for our skate progression application. It details important requirements and ideas for the applications development
-      </p>
-    </section>
-    <section class="project">
-      <a href="files/sheets_DOC.pdf"><h3>Sketches</h3></a>
-      <a href="files/sheets_DOC.pdf"><img src="images/sheet_IMG.png"></a>
-      <p>
-        These are some brief sketches of our skate progression application highlighting how users can progress in a skill tree, view tricks that they have landed, and upload tricks they have landed.
-      </p>
-    </section>
-    <section class="project">
-      <a href="https://youtu.be/eWrHaYCTEf8"><h3> Prototype</h3></a>
-      <a href="https://youtu.be/eWrHaYCTEf8"><img src="images/Proto.png"></a>
-      <p> The prototype of our SkateTree app demonstrates how our app will help beginning and experienced skaters track their progression in skateboarding. </p>
-    </section>
-  </div>
-  <div class="contact"><h2>Contact me</h2></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
